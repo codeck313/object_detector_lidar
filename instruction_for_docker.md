@@ -1,3 +1,4 @@
+
 # Carla with Lidar Object Detection Setup
 ## Installation
 ### Docker Installation
@@ -8,23 +9,24 @@ For ease of use you can also follow the following instructions:
  1. Set up Docker's `apt` repository.
 
         # Add Docker's official GPG key:
-        sudo apt-get update
-        sudo apt-get install ca-certificates curl
-	    sudo install -m 0755 -d /etc/apt/keyrings
-	    sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-	    sudo chmod a+r /etc/apt/keyrings/docker.asc
-2. Install the Docker packages.
+        $ sudo apt-get update
+        $ sudo apt-get install ca-certificates curl
+        $ sudo install -m 0755 -d /etc/apt/keyrings
+        $ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+        $ sudo chmod a+r /etc/apt/keyrings/docker.asc
+3. Install the Docker packages.
 
-	    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-3. Test if the Docker Engine is running or not:
+	    $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-	    sudo docker run hello-world
-4. Create docker group to allow docker to run rootless
+5. Test if the Docker Engine is running or not:
 
+	    $ sudo docker run hello-world
 
-	    sudo groupadd docker
-    	sudo usermod -aG docker $USER
-    	newgrp docker
+6. Create docker group to allow docker to run rootless
+
+	    $ sudo groupadd docker
+	    $ sudo usermod -aG docker $USER
+	    $ newgrp docker
     Check if this command works: `docker run hello-world`
 
 ### Install NVIDIA Container Toolkit
