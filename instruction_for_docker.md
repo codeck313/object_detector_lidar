@@ -60,7 +60,7 @@ You should be able to see nvidia-smi output.
 Next you need to download the following docker images:
 1. [Carla Bridge Docker Image](https://indianinstituteofscience-my.sharepoint.com/:u:/g/personal/sakshams_iisc_ac_in/EXv9gvfi7g9JlCzZtsSxzDoBIcqoEJFlbwpRWX98KSG1EQ?e=i9nwW7)
 2. [Carla Simulator Docker Image](https://indianinstituteofscience-my.sharepoint.com/:u:/g/personal/sakshams_iisc_ac_in/EbtdaeUgAkRElFjU6_SA2bMBfWXa7rylLttXlnY33efMwQ?e=b5uGRF)
-3. [Object Detection Docker Image]()
+3. [Object Detection Docker Image](https://indianinstituteofscience-my.sharepoint.com/:u:/g/personal/sakshams_iisc_ac_in/Eb2Ri5x2JSxOh8uswh7T9r0ByIDq_OJUtFltRj7R3EviTg?e=BfJ3yJ)
 
 ### Load the docker images
 Execute from the path you downloaded the images from
