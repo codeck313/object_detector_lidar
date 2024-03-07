@@ -77,11 +77,12 @@ The deployment is split into three docker images: CarlaSimulator, Carla-ROS-Brid
 
 1. First start the CARLA image:
 
-	   $ docker run --privileged --gpus all --net=host -e DISPLAY=$DISPLAY -e SDL_VIDEODRIVER=x11 -v /tmp/.X11-unix:/tmp/.X11-unix:rw carlasim/carla:0.9.13 /bin/bash ./CarlaUE4.sh -vulkan
-2. Next spinup the CARL-ROS-Bridge Container
+	   $ xhost +local:docker
+   	   $ docker run --privileged --gpus all --net=host -e DISPLAY=$DISPLAY -e SDL_VIDEODRIVER=x11 -v /tmp/.X11-unix:/tmp/.X11-unix:rw carlasim/carla:0.9.13 /bin/bash ./CarlaUE4.sh -vulkan
+3. Next spinup the CARL-ROS-Bridge Container
 
        $ docker run -it --net=host --gpus all -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix carla-ros-bridge:noetic
-3. Lastly run the object detection node
+4. Lastly run the object detection node
 
        $ docker run -it --net=host --gpus all -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix obd_with_carla:latest /bin/zsh
 
